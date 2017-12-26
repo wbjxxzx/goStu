@@ -22,6 +22,11 @@ func main() {
 				continue
 			}
 			countLines(f, counts)
+			for line, n := range counts {
+				if n > 1 {
+					fmt.Printf("File: %s has duplicate rows %s\n", arg, line)
+				}
+			}
 			f.Close()
 		}
 	}
