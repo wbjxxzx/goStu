@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	fmt.Println(comma("12345678"))
 	fmt.Println(comma("-12345"))
 	fmt.Println(comma("+1345."))
 	fmt.Println(comma("+1345.13"))
