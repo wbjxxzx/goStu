@@ -24,7 +24,7 @@ func cmpString(a, b string) bool {
 		mb[v]++
 	}
 	for k, v := range ma {
-		if mb[k] != v {
+		if bv, ok := mb[k]; !ok || bv != v {
 			return false
 		}
 	}
